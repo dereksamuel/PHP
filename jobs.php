@@ -1,7 +1,7 @@
 <?php
-  require_once './app/Models/Job.php';
-  require_once './app/Models/Project.php';
-  require_once './app/Models/Printable.php';
+  require_once 'vendor/autoload.php';
+
+  use App\Models\{Job, Project, Printable};
 
   $developer = 'Developer';
   $job1 = new Job("JavaScript $developer", "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore optio cupiditate rem expedita velit quae facilis voluptatem corrupti explicabo exercitationem, maiores mollitia eligendi quidem error, asperiores molestias voluptates amet incidunt!
@@ -16,7 +16,13 @@
   Quam facere consequuntur mollitia quo aliquam eum repellat iusto quisquam neque et porro itaque impedit, voluptatibus aliquid enim similique repellendus dignissimos voluptatum illo id atque ipsam nesciunt qui dolores? Adipisci.");
   $job2->months = 2;
 
-  $project1 = new Project('Project 1', 'Description 1');
+  $project1 = new Project('Project 1', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ea, voluptas
+  architecto ex odio dicta molestias porro laborum modi veritatis aperiam suscipit nobis excepturi vitae aliquam ab eaque incidunt consequatur?
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ea, voluptas architecto ex odio dicta molestias porro laborum modi veritatis aperiam suscipit nobis excepturi vitae aliquam ab eaque incidunt consequatur?
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ea, voluptas architecto ex odio dicta molestias porro laborum modi veritatis aperiam suscipit nobis excepturi vitae aliquam ab eaque incidunt consequatur?
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ea, voluptas architecto ex odio dicta molestias porro laborum modi veritatis aperiam suscipit nobis excepturi vitae aliquam ab eaque incidunt consequatur?
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ea, voluptas architecto ex odio dicta molestias porro laborum modi veritatis aperiam suscipit nobis excepturi vitae aliquam ab eaque incidunt consequatur?
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ea, voluptas architecto ex odio dicta molestias porro laborum modi veritatis aperiam suscipit nobis excepturi vitae aliquam ab eaque incidunt consequatur?');
 
   $projects = [
     $project1,
@@ -55,5 +61,8 @@
       print $param->getDurationAsString();
       print "<p class='pharragraph'>TOTAL OF MONTHS: $extra</p>";
     }
-    else echo $param;
+    else if ($type === 'PROJECTS') {
+      print '<h4 class="text_xsmall">'. $param->getTitle() .'</h4>';
+      print '<p class="pharragraph">' . $param->getDescription() . '</p>';
+    };
   };

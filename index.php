@@ -82,11 +82,11 @@
     <section class="projects">
       <h1 class="title">Projects</h1>
       <article class="projects_description">
-        <p class="pharragraph">
+        <div class="projects__container">
           <?php
             printElement($projects, $totalMounths, $limitMonths, 'PROJECTS');
           ?>
-        </p>
+        </div>
         <section class="tools">
           <h2 class="subtitle">Skills & Tools <i class="fas fa-tools"></i></h2>
           <h4 class="text_small">Backend:</h4>
