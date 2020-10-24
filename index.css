@@ -1,0 +1,193 @@
+:root {
+  --color-dark: #142850;
+  --color-variant: #27496d,
+  --color-radiant: #00a8cc;
+  --color-all: rgba(37, 37, 37, 0.918);
+  --color-white: #f1f6f9;
+  --font-1: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-1);
+}
+
+html {
+  font-size: 80%;
+  line-height: 1.5rem;
+  color: var(--color-all);
+}
+
+::-webkit-scrollbar {
+  background-color: #142850;
+  width: .8rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #00a8cc;
+  border-radius: 5px;
+  width: .8rem;
+}
+
+/* .experience__introduction {
+  display: flex;
+  justify-content: center;
+} */
+
+.knife, .star {
+  width: 348px;
+  transform: rotate(270deg);
+  position: absolute;
+  right: 0;
+  top: -137px;
+}
+
+.star {
+  width: 64px;
+  top: 7px;
+  right: 7px;
+}
+
+.experience__introduction_2--list, .experience__introduction--list {
+  margin-left: 2rem;
+}
+
+.projects_description {
+  display: flex;
+}
+
+.tools {
+  padding: 1rem;
+  text-align: center;
+  margin: 1rem;
+  width: 50%;
+  border: 3px solid black;
+  color: #142850;
+  background-color: #00a8cc;
+}
+
+.tools__list {
+  width: 35vw;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.down {
+  font-size: 4rem;
+  margin: auto;
+  text-align: center;
+}
+
+.ninja {
+  color: #55ecff;
+}
+
+.tools__list--item {
+  margin: 1rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  background-color: #142850;
+  border-radius: 1rem;
+  cursor: pointer;
+  padding: 1rem;
+  color: var(--color-white);
+}
+
+.tools__list--item:active {
+  background-color: var(--color-white);
+  color: #142850;
+}
+
+.title {
+  margin: 1rem 0;
+  font-size: 2.2rem;
+  color: var(--color-dark);
+}
+
+.title.white {
+  color: var(--color-white);
+}
+
+.subtitle {
+  font-size: 1.8rem;
+  font-style: italic;
+  color: var(--color-variant);
+  margin: 1rem;
+}
+
+.Menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #27496d;
+  padding: 1rem;
+}
+
+.Menu__list {
+  list-style: none;
+}
+
+.Menu__list--item {
+  display: inline-block;
+}
+
+.Menu__list--item a {
+  text-decoration: none;
+  color: #b2f1ff;
+  margin: 1rem;
+}
+
+.user__info {
+  width: 50rem;
+  height: 21rem;
+  margin: 3rem auto;
+  display: flex;
+  box-shadow: 0 0 6px 0px #747474;
+}
+
+.user__info--picture {
+  margin-right: 1.6rem;
+}
+
+.content__info {
+  margin-top: 1.5rem;
+  margin-left: 3rem;
+  font-size: 1.3rem;
+}
+
+.experience h1, .projects h1 {
+  position: relative;
+  color: var(--color-white);
+  padding: 3rem;
+  background-color: var(--color-dark);
+}
+
+.pharragraph {
+  margin: 2rem;
+}
+
+.text_xsmall, .text_small {
+  font-size: 1.7rem;
+  font-style: italic;
+  margin: 2rem;
+  color: #27496d;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+  padding: 5rem;
+  background-color: #27496d;
+  color: var(--color-white);
+}
+
+#user-img {
+  width: 17rem;
+  object-fit: cover;
+  height: 21rem;
+}
